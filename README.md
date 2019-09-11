@@ -4,15 +4,15 @@ Within this project there are several folders that have coding problems to solve
 
 ## Suggested order according to the difficulty
 
-1. snail-and-well
+1. apocalypsis
 2. duel
-3. bus
-4. robin-hood
+3. temperatures
+4. bus
 5. mission-impossible
-6. temperatures
+6. snail-and-well
 7. lyrics
-8. rock–paper–scissors
-
+8. robin-hood
+9. rock–paper–scissors
 
 ## Tips
 
