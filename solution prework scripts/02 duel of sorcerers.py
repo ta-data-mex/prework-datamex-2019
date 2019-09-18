@@ -16,7 +16,7 @@ saruman = [23, 66, 12, 43, 12, 10, 44, 23, 12, 17]
 gandalf_wins = 0
 saruman_wins = 0
 
-for i in range(10):
+for i in range(len(sequence)):
     if gandalf[i] > saruman [i]:
         gandalf_wins += 1
         print("The", sequence[i], "duel is won by Gandalf:", gandalf[i], "againts", saruman[i],", wins", gandalf[i])
