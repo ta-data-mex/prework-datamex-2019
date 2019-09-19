@@ -24,10 +24,13 @@ cargadores = {
     'escopeta': [2, 2, 2, 2, 2]
 }
 
+total_municiones = []
 for x in armas:
     for y, z in cargadores.items():
         if x == y:
-            print("Total de municiones para",y,":",sum(z))
+            total_municiones += z
+print("El total de municiones que se pueden usar son:",sum(total_municiones)) 
+            
 
 ###############################################################################
 #########   Caso 1: Mismas armas que municiones
@@ -42,10 +45,12 @@ cargadores = {
     'fusil de francotirador': [1, 2, 4]
 }
 
+total_municiones = []
 for x in armas:
     for y, z in cargadores.items():
         if x == y:
-            print("Total de municiones para",y,":",sum(z))
+            total_municiones += z
+print("El total de municiones que se pueden usar son:",sum(total_municiones))  
 
 ###############################################################################
 #########   Caso 2: Más tipos de munición que armas
@@ -61,10 +66,12 @@ cargadores = {
     'bazoka': [1, 1]
 }
 
+total_municiones = []
 for x in armas:
     for y, z in cargadores.items():
         if x == y:
-            print("Total de municiones para",y,":",sum(z))
+            total_municiones += z
+print("El total de municiones que se pueden usar son:",sum(total_municiones)) 
 
 ###############################################################################
 #########   Caso 3: Más armas que tipos de munición
@@ -78,10 +85,12 @@ cargadores = {
     'escopeta': [2, 2, 2, 1] 
 }
 
+total_municiones = []
 for x in armas:
     for y, z in cargadores.items():
         if x == y:
-            print("Total de municiones para",y,":",sum(z))
+            total_municiones += z
+print("El total de municiones que se pueden usar son:",sum(total_municiones)) 
 
 #Notas:
 #1.- para acceder a las llaves dentro de un diccionario es .keys() ya los valores .values(), y a todo .items()
