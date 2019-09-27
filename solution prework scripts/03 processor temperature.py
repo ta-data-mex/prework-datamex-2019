@@ -91,13 +91,27 @@ for x,y in dictionary.items():
 print(hours_greater_70)
 
 # 2. Condition that those hours are more than 4 consecutive and consecutive, not simply the sum of the whole set. Is this condition met?
-count_of_consecutives = []
 
-for i in hours_greater_70:
-    count_of_consecutives.append((i+1)-i)
+def count_consecutives(listt):
+    count_of_consecutives = []
+    count = 1
+    for i in range(len(listt[:-1])): #lisst[:-1] en lugar de todo el len(listt) para evitar IndexError
+            if listt[i]+1 == listt[i+1]:
+                count+=1
+            else:
+                count_of_consecutives.append(count)
+                count=1
+    count_of_consecutives.append(count)
+    return count_of_consecutives
 
-if count_of_consecutives.count(1) > 4:
-    print(True)
+count_consecutives(hours_greater_70)
+
+if any(i > 4  for i in (count_consecutives(hours_greater_70))):
+    print("Would I change the cooling system?: Yes!")
+
+#La diferencia para evitar IndexError:   
+#range(len(hours_greater_70[:-1]))
+#range(len(hours_greater_70))
 
 # 3. Average of each of the lists (ºC and ºF). How they relate?
 import numpy as np
