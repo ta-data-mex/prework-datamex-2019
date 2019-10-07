@@ -37,9 +37,9 @@ print(index_greater_than10_dbs)
 
 all_greater_than10 = []
 
-for indx, value in enumerate(dbs):
-    if value > 10:
-        all_greater_than10 += [(indx,value)]
+for n, i in enumerate(dbs):
+    if i > 10:
+        all_greater_than10 += [(n,i)]
         
 print(all_greater_than10)
 
@@ -77,5 +77,6 @@ for i in dbs:
     else: 
         post_hacking.append(i)
 
+print(dbs)
 print(post_hacking)
 

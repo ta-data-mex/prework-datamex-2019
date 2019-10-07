@@ -25,7 +25,6 @@ for i, j in stops:
     passengers_count += subtraction
     number_passengers_per_stop.append(passengers_count)
     
-    
 print(number_passengers_per_stop)
 
 # 3. Find the maximum occupation of the bus.
