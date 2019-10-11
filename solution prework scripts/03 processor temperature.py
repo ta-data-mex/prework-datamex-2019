@@ -28,7 +28,7 @@ plt.title('Temperatures of our server throughout the day')
 temperatures_C = [33,66,65,0,59,60,62,64,70,76,80,81,80,83,90,79,61,53,50,49,53,48,45,39]
 
 # 1. Calculate the minimum of the list and print the value using print()
-min(temperatures_C)
+min(temperatures_C)print(5+5)
 
 # 2. Calculate the maximum of the list and print the value using print()
 max(temperatures_C)
@@ -56,6 +56,8 @@ print(temperatures_C_b)
 
 estimated_value = round(sum(temperatures_C_b) / len(temperatures_C_b),1)
 
+#Interpolación: sacar un promedio de los valores de los lados de la posición.
+
 # 5.2 Update of the estimated value at 03:00 on the list
 temperatures_C[3] = estimated_value
 print(temperatures_C)
@@ -69,6 +71,8 @@ for i in temperatures_C:
     temperatures_F.append(temp)
 
 print(temperatures_F)
+
+#Comprensión de lista: un chavo utilizó esto.
 
 # Print True or False depending on whether you would change the cooling system or not
 if len(greater_than_70) > 4 or any(i > 80 for i in temperatures_C) or mean > 65:

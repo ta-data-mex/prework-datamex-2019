@@ -59,7 +59,9 @@ def count_consecutives(listt):
     count_of_consecutives.append(count)
     return count_of_consecutives
 
-if any(i >=2  for i in (count_consecutives(index_greater_than10_dbs))):
+count_consecutives(dbs)
+
+if any(i >=2  for i in (count_consecutives(dbs))):
     print("Alarm!")
 
 #La diferencia para evitar IndexError:   
